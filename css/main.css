@@ -1,11 +1,9 @@
 /*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
-
 /*
  * What follows is the result of much research on cross-browser styling.
  * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
  * Kroc Camen, and the H5BP dev community and team.
  */
-
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
@@ -15,7 +13,6 @@ html {
     font-size: 1em;
     line-height: 1.4;
 }
-
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
@@ -28,12 +25,10 @@ html {
     background: #b3d4fc;
     text-shadow: none;
 }
-
 ::selection {
     background: #b3d4fc;
     text-shadow: none;
 }
-
 /*
  * A better looking default horizontal rule
  */
@@ -46,7 +41,6 @@ hr {
     margin: 1em 0;
     padding: 0;
 }
-
 /*
  * Remove the gap between audio, canvas, iframes,
  * images, videos and the bottom of their containers:
@@ -61,7 +55,6 @@ svg,
 video {
     vertical-align: middle;
 }
-
 /*
  * Remove default fieldset styles.
  */
@@ -71,7 +64,6 @@ fieldset {
     margin: 0;
     padding: 0;
 }
-
 /*
  * Allow only vertical resizing of textareas.
  */
@@ -79,7 +71,6 @@ fieldset {
 textarea {
     resize: vertical;
 }
-
 /* ==========================================================================
    Browser Upgrade Prompt
    ========================================================================== */
@@ -90,15 +81,20 @@ textarea {
     color: #000;
     padding: 0.2em 0;
 }
-
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+
 body {
     font-family: 'Open Sans', Arial, sans-serif;
     color: #44484f;
 }
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     margin: 0;
     padding: 0;
 }
@@ -107,6 +103,7 @@ p {
     padding: 0;
 }
 /* icons */
+
 .icon {
     font-family: 'fontello';
     font-style: normal;
@@ -114,7 +111,7 @@ p {
 }
 /* links */
 
-.link-default{
+.link-default {
     display: block;
     width: 135px;
     padding: 16px;
@@ -122,11 +119,11 @@ p {
     color: #fff;
     background: #3dd2ae;
     text-decoration: none;
-    border-radius: 28px; 
+    border-radius: 28px;
     font-size: 14px;
     font-weight: 600;
 }
-.link-default:hover{
+.link-default:hover {
     transition: all 1s ease-in;
     background: #20967a;
 }
@@ -135,7 +132,7 @@ p {
     background: #835fa8;
     font-size: 15px;
 }
-.link-default--alt:hover{
+.link-default--alt:hover {
     transition: all 1s ease-in;
     background: #593c76;
 }
@@ -143,8 +140,8 @@ p {
     width: 100%;
     margin: 0 auto;
 }
-
 /* header */
+
 .sec--head {
     position: fixed;
     top: 0;
@@ -156,15 +153,14 @@ p {
     width: 100%;
     padding: 0 30px 0 0;
 }
-
 .sec--head .sec__inner:after {
     content: '';
     height: 0;
     clear: both;
     display: block;
 }
-
 /* header box */
+
 .sec__box {
     margin-top: 45px;
     margin-left: 50px;
@@ -173,11 +169,9 @@ p {
 .sec__box--main {
     float: left;
 }
-
 .sec__box--tools {
     padding-top: 20px;
     float: right;
-
 }
 .sec__box--tools:after {
     content: '';
@@ -185,29 +179,33 @@ p {
     clear: both;
     display: block;
 }
-.search {
+.search-form {
     position: relative;
     float: left;
 }
 .search-btn {
-  position: absolute;
-  top: 13px;
-  right: 38px;
-  background: transparent;
-  border: none;
-  color: #a7a7a8;
-  font-size: 18px;
+    position: absolute;
+    top: 13px;
+    right: 38px;
+    background: transparent;
+    border: none;
+    color: #a7a7a8;
+    font-size: 18px;
+    outline: none;
 }
 input[type=search] {
     width: 254px;
     margin: 0 20px;
     padding: 17px 35px;
     border: 0;
-    border-radius: 28px; 
+    border-radius: 28px;
     background: #343c48;
     color: #9da5b0;
     font-size: 14px;
     font-weight: 400;
+}
+input[type=search]:focus {
+    outline: none;
 }
 .buy {
     float: left;
@@ -219,13 +217,14 @@ input[type=search] {
     font-size: 20px;
     color: #f9f9f4;
 }
-.nav a{
+.nav a {
     color: #fff;
 }
 .buy .nav {
     display: inline;
 }
 /* main */
+
 .hero {
     width: 100%;
     min-height: 900px;
@@ -236,8 +235,9 @@ input[type=search] {
     background-repeat: no-repeat;
 }
 /* info-box */
+
 .info-box {
-    padding: 15px;
+    padding: 15px 20px 15px 0;
     color: #fff;
 }
 .info-box__title {
@@ -252,9 +252,9 @@ input[type=search] {
 }
 .info-box--highlighted {
     position: absolute;
-    top: 380px;
-    left: 650px;
-    color: #fff; 
+    top: 300px;
+    left: 450px;
+    color: #fff;
 }
 .info-box--highlighted .info-box__title {
     font-size: 70px;
@@ -269,7 +269,7 @@ input[type=search] {
     text-align: left;
 }
 .info-box--small .info-box__title {
-    padding:;
+    padding: ;
     font-size: 30px;
     font-weight: 300;
     color: #2b303b;
@@ -291,13 +291,13 @@ input[type=search] {
 .info-box--center .info-box__content {
     color: #9da5b0;
 }
-
 /* section super-duper */
+
 .sec--super-duper {
     background: #835fa8;
 }
 .sec--super-duper .sec__inner {
-    width: 1200px;
+    width: 1100px;
 }
 .sec--super-duper .sec__inner:after {
     content: '';
@@ -312,25 +312,26 @@ input[type=search] {
     min-height: 500px;
 }
 .box--left {
-    width: 50%;
+    width: 40%;
     float: left;
 }
 .box--right {
     position: relative;
-    width: 50%;
+    width: 60%;
     float: right;
 }
 .box--right img {
     position: absolute;
     top: -100px;
 }
-
 /* section features */
+
 .sec--features {
+    z-index: 1;
     background: #f4f8fb;
 }
 .sec--features .sec__inner {
-    width: 1200px;
+    width: 1100px;
 }
 .sec--features .sec__inner:after {
     height: 0;
@@ -349,15 +350,15 @@ input[type=search] {
 .box--feature:last-child {
     margin-right: 0;
 }
-
 /* section for humans */
+
 .sec--for-humans {
     background: #232831;
 }
 .sec--for-humans .sec__inner {
-    width: 1200px;
+    width: 1100px;
 }
-.box--for-humans{
+.box--for-humans {
     padding-top: 50px;
     padding-bottom: 0;
 }
@@ -366,25 +367,24 @@ input[type=search] {
     margin-top: -27px;
     left: 47%;
     right: 47%;
-    
 }
 .photo-wrap {
     text-align: center;
     margin-bottom: 0;
 }
 /* section services */
+
 .sec--services {
     background: #2b303b;
 }
 .sec--services .sec__inner {
-    width: 1200px;
+    width: 1100px;
 }
 .services-list:after {
     content: '';
     height: 0;
     clear: both;
     display: block;
-
 }
 .services-list {
     margin-top: 0;
@@ -404,7 +404,6 @@ input[type=search] {
     margin-right: 0;
 }
 .service-list-item i {
-    padding-left: 15px;
     font-size: 38px;
     color: #3dd2ae;
 }
@@ -414,26 +413,26 @@ input[type=search] {
     color: #3a4d60;
 }
 .service-list-item__title {
-    padding: 15px;
+    padding: 15px 0;
     font-size: 20px;
     font-weight: 400;
     color: #fff;
 }
 .service-list-item__content {
-    padding: 15px;
+    padding: 15px 0;
     margin-bottom: 20px;
     line-height: 28px;
     font-size: 14px;
     font-weight: 400;
     color: #9da5b0;
 }
-
 /*section conectivity */
+
 .sec--conectivity {
     background: #e9eef1;
 }
 .sec--conectivity .sec__inner {
-    width: 1200px;
+    width: 1100px;
 }
 .sec--conectivity .sec__inner:after {
     content: '';
@@ -452,13 +451,12 @@ input[type=search] {
     right: 0;
     width: 50%;
     height: 560px;
-    background: url(../img/watch.png) 50% 50% no-repeat;
+    background: url('../img/watch.png') 50% 50% no-repeat;
     background-size: cover;
-} 
+}
 .conectivity-content {
     padding-top: 70px;
     padding-bottom: 40px;
-
 }
 .info-box .icon {
     color: #835fa8;
@@ -477,18 +475,275 @@ input[type=search] {
     font-size: 14px;
     color: #696f7c;
 }
-
 /* section latest-news */
+
 .sec--latest-news {
-    background: #f4f8fb;
+    position: relative;
+    height: 460px;
 }
-.sec--latest-news .sec__inner {
-    width: 1200px;
+.sec--latest-news .sec__inner:after {
+    content: '';
+    height: 0;
+    clear: both;
+    display: block;
+}
+.media-content {
+    float: left;
+    width: 40.2vw;
+    height: 460px;
+    margin-left: 9.2vw;
+}
+.media {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background: url('../img/video_phone.png') 50% 50% no-repeat;
+    background-size: cover;
+}
+.blockquote--right {
+    height: 460px;
+    margin-left: 45vw;
+    background: #835fa8;
+}
+.blockquote--right .blockquote__inner {
+    margin-left: 60px;
+    padding: 60px 120px 60px 60px;
+}
+.blockquote__date {
+    margin-bottom: 18px;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 12px;
+    color: #fff;
+}
+.blockquote__cite {
+    line-height: 44px;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 32px;
+    color: #fff;
+}
+.blockquote__author {
+    margin-top: 30px;
+    font-weight: 400;
+    font-size: 15px;
+    color: #fff;
+}
+.blockquote__author img {
+    margin-right: 20px;
+}
+.latest-news-link {
+    position: absolute;
+    width: 86px;
+    bottom: 0;
+    height: 25px;
+    line-height: 22px;
+    background: #232323;
+    text-align: center;
+    font-size: 10px;
+    text-decoration: none;
+    color: #fff;
+}
+/* section comments */
+
+.sec--comments {
+    background: #e9eef1;
+}
+.sec--comments .sec__inner {
+    width: 1100px;
+}
+.sec--comments .sec__inner:after {
+    content: '';
+    height: 0;
+    clear: both;
+    display: block;
+}
+.sec__comment-content {
+    position: relative;
+    width: 50%;
+    height: 350px;
+    float: left;
+    background: #fff;
+}
+.sec__comment-photo {
+    width: 50%;
+    min-height: 350px;
+    float: right;
+    background: url('../img/triangle.png'), url('../img/phones_smaller.png');
+    background-position: -8px 50%, 50% 50%;
+    background-repeat: no-repeat, no-repeat;
+    background-size: auto, cover;
+}
+.comment-text {
+    padding: 15px;
+}
+.comment-text .comment-text__inner {
+    padding: 25px 25px;
+}
+.comment-text .comment-text__title {
+    line-height: 28px;
+    font-size: 23px;
+    font-weight: 300;
+    color: #232323;
+}
+.comment-text .comment-text__content {
+    line-height: 25px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #83969f;
+}
+.comment-text .comment-text__count-of-comments {
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 0;
+    font-weight: 300;
+    font-size: 30px;
+    color: #83969f;
+}
+.seperator {
+    margin: 0 4px;
+    font-weight: 300;
+    font-size: 40px;
+    color: #ecece6;
+}
+.comment {
+    position: absolute;
+    bottom: 14px;
+    font-weight: 600;
+    font-size: 12px;
+}
+/* section mastfoot */
+
+.sec--mastfoot {
+    position: relative;
+    width: 100%;
+    height: 660px;
+    background: url(../img/drawing_smaller.png) 50% 50% no-repeat;
+    background-size: cover;
+}
+.sec--mastfoot .sec__inner {
+    width: 1100px;
+}
+.mastfoot-bg {
+    width: 50%;
+    height: 460px;
+    background: #835fa8;
+}
+.blockquote--left {
+    position: absolute;
+    top: 80px;
+    width: 460px;
+}
+.blockquote__inner {
+    padding: 15px 15px 15px 0;
+}
+/* footer */
+
+.sec--footer {
+    background: #1a2124;
+}
+.sec--footer .sec__inner {
+    width: 1100px;
+}
+.sec--footer .sec__inner:after {
+    height: 0;
+    clear: both;
+    display: block;
+    margin: 0;
+    content: '';
+}
+.footer__box-content {
+    padding-top: 90px;
+    padding-bottom: 120px;
+}
+.footer--left {
+    float: left;
+    width: 50%;
+}
+.footer--right {
+    float: right;
+    width: 50%;
+}
+.footer-box {
+    padding: 12px 0;
+}
+.footer-box__inner {
+    margin-left: 100px;
+}
+.footer-box__text-head {
+    font-weight: 600;
+    font-size: 13px;
+    color: #f6f7fa;
+}
+.footer-box__text-content {
+    line-height: 24px;
+    font-size: 13px;
+    color: #f6f7fa;
+}
+.newsletter-form {
+    padding-top: 12px
+}
+.newsletter-form:after {
+    height: 0;
+    clear: both;
+    display: block;
+    margin: 0;
+    content: '';
+}
+.input-email {
+    float: left;
+    padding-left: 20px;
+    width: 300px;
+    height: 50px;
+    font-size: 16px;
+    color: #000;
+    border: 0;
+}
+.input-email:focus {
+    outline: none;
+}
+.input-send {
+    width: 66px;
+    height: 52px;
+    font-size: 32px;
+    border: none;
+    background-color: #835fa8;
+}
+.-input-send:focus {
+    outline: none;
+}
+.newsletter-form i {
+    color: #fff;
+}
+.site-map {
+    width: 100%;
+    margin-top: 40px;
+}
+.site-map__content {
+    display: inline-block;
+    width: 30%;
+}
+.map-list {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 12px 0;
+}
+.map-list__item {
+    line-height: 24px;
+    padding-bottom: 2px;
+    font-weight: 400;
+    font-size: 13px;
+}
+.map-list__item a {
+    text-decoration: none;
+    color: #e9eef1;
+}
+.map-list__item a:hover {
+    text-decoration: underline;
 }
 /* ==========================================================================
    Helper classes
    ========================================================================== */
-
 /*
  * Hide visually and from screen readers
  */
@@ -496,7 +751,6 @@ input[type=search] {
 .hidden {
     display: none !important;
 }
-
 /*
  * Hide only visually, but have it available for screen readers:
  * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
@@ -512,7 +766,6 @@ input[type=search] {
     position: absolute;
     width: 1px;
 }
-
 /*
  * Extends the .visuallyhidden class to allow the element
  * to be focusable when navigated to via the keyboard:
@@ -528,7 +781,6 @@ input[type=search] {
     position: static;
     width: auto;
 }
-
 /*
  * Hide visually and from screen readers, but maintain layout
  */
@@ -536,7 +788,6 @@ input[type=search] {
 .invisible {
     visibility: hidden;
 }
-
 /*
  * Clearfix: contain floats
  *
@@ -551,14 +802,15 @@ input[type=search] {
 
 .clearfix:before,
 .clearfix:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
+    content: " ";
+    /* 1 */
+    
+    display: table;
+    /* 2 */
 }
-
 .clearfix:after {
     clear: both;
 }
-
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
    These examples override the primary ('mobile first') styles.
@@ -568,14 +820,12 @@ input[type=search] {
 @media only screen and (min-width: 35em) {
     /* Style adjustments for viewports that meet the condition */
 }
-
 @media print,
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 1.25dppx),
-       (min-resolution: 120dpi) {
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
     /* Style adjustments for high resolution devices */
 }
-
 /* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request:
@@ -589,66 +839,58 @@ input[type=search] {
     *:first-letter,
     *:first-line {
         background: transparent !important;
-        color: #000 !important; /* Black prints faster:
+        color: #000 !important;
+        /* Black prints faster:
                                    http://www.sanbeiji.com/archives/953 */
+        
         box-shadow: none !important;
         text-shadow: none !important;
     }
-
     a,
     a:visited {
         text-decoration: underline;
     }
-
     a[href]:after {
         content: " (" attr(href) ")";
     }
-
     abbr[title]:after {
         content: " (" attr(title) ")";
     }
-
     /*
      * Don't show links that are fragment identifiers,
      * or use the `javascript:` pseudo protocol
      */
-
+    
     a[href^="#"]:after,
     a[href^="javascript:"]:after {
         content: "";
     }
-
     pre,
     blockquote {
         border: 1px solid #999;
         page-break-inside: avoid;
     }
-
     /*
      * Printing Tables:
      * http://css-discuss.incutio.com/wiki/Printing_Tables
      */
-
+    
     thead {
         display: table-header-group;
     }
-
     tr,
     img {
         page-break-inside: avoid;
     }
-
     img {
         max-width: 100% !important;
     }
-
     p,
     h2,
     h3 {
         orphans: 3;
         widows: 3;
     }
-
     h2,
     h3 {
         page-break-after: avoid;
