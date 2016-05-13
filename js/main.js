@@ -1,15 +1,15 @@
 $(function () {
     new WOW().init();
     $(document).ready(function() {
-	    var NavY = $('.sec--head').offset().top;
+	    var NavY = $('.head-sec').offset().top;
 	     
 	    var stickyNav = function(){
 	    var ScrollY = $(window).scrollTop();
 	          
 	    if (ScrollY > NavY) { 
-	        $('.sec--head').addClass('sticky');
+	        $('.head-sec').addClass('sticky');
 		    } else {
-		        $('.sec--head').removeClass('sticky'); 
+		        $('.head-sec').removeClass('sticky'); 
 		    }
 	    };
 	     
